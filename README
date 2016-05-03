@@ -1,0 +1,6 @@
+Apache2
+-------
+/etc/apache2/ports.conf should be modified to listen on 0.0.0.0:{port} to use IPv4.
+Run 'a2enmod rewrite' to enable rewriting (which I use quite a bit).
+
+nuc-peter.conf - Symlink to this file from /etc/apache2/sites-available
