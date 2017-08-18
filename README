@@ -3,4 +3,10 @@ Apache2
 /etc/apache2/ports.conf should be modified to listen on 0.0.0.0:{port} to use IPv4.
 Run 'a2enmod rewrite' to enable rewriting (which I use quite a bit).
 
-nuc-peter.conf - Symlink to this file from /etc/apache2/sites-available
+Now including HTTPS, so we need 'a2enmod socach_shmcb' and 'a2enmdo ssl'.
+
+Nice to have is 'a2enmod headers' and some faffing in the main apache2.conf.
+
+nuc-peter.conf     - Symlink to this file from /etc/apache2/sites-available
+nuc-peter-ssl.conf - Symlink to this file from /etc/apache2/sites-available
+htpasswd           - Used from inge/diet for authentication (NOT in git)
