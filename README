@@ -7,6 +7,13 @@ Now including HTTPS, so we need 'a2enmod socach_shmcb' and 'a2enmdo ssl'.
 
 Nice to have is 'a2enmod headers' and some faffing in the main apache2.conf.
 
-nuc-peter.conf     - Symlink to this file from /etc/apache2/sites-available
-nuc-peter-ssl.conf - Symlink to this file from /etc/apache2/sites-available
-htpasswd           - Used from inge/diet for authentication (NOT in git)
+Symlink to these files from /etc/apache2/sites-available (and those to sites-enabled):
+fs-peter.conf
+fs-peter-drealm-backup.conf
+fs-peter-ssl.conf
+jamuluswebsite.conf
+steveholt.conf
+
+README     - this file
+htpasswd   - Used from inge/diet for Apache Basic Authentication (NOT in git)
+tomcat.p12 - PKCS-12 keystore for SpringBoot applications (see 'tomcat.p12 keystore password') (NOT in git)
